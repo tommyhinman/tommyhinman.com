@@ -1,0 +1,74 @@
+.name, .tagline, .links a {
+	font-family: 'Open Sans Light', 'Open Sans', sans-serif;
+}
+
+html, body {
+	margin: 0; padding: 0;
+	height: 100%;
+}
+
+body {
+	font-family: Lato, Arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: Lato, Arial, sans-serif;
+	font-weight: normal; color: #666;
+}
+
+h1 {
+	color: #222; border-bottom: 1px solid #ddd;
+	letter-spacing:-0.05em; font-weight: 700;
+	margin-top:0; padding-top:0;
+}
+
+#floater {
+	position: relative; float: left;
+	height: 40%;
+	margin-bottom: -200px;
+	width: 1px;
+}
+
+#centered {
+	position: relative; 
+	clear: left;
+	height: 400px; width: 80%; max-width: 800px; min-width: 400px;
+	margin: 0 auto;
+	background: #fff;
+	/*border: 4px solid #666;*/
+}
+
+#namebox {
+	
+	left: 0; right: 0; top: 0; bottom: 0;
+	text-align: center;
+	
+	padding: 20px 20px 0px 20px;
+}
+
+#linkbox {	
+	left: 0; right: 0; top: 0; bottom: 0;
+	text-align: center;	
+}
+
+#linklist li {
+	display: inline;
+	list-style-type: none;
+	padding-right: 20px;
+}
+
+#linklist li a {
+	padding: 7px; margin: 0;
+	text-decoration: none;
+	color: #000;
+	text-align: center;
+	font-size: 16pt;
+	font-weight: 300;
+}
+
+#linklist li a:hover, #linklist li a:focus {
+	background: #f8f8f8;
+}
+
+#linklist li a:active {
+	padding: 8px 7px 6px 7px;
