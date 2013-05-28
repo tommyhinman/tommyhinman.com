@@ -16,10 +16,16 @@ h1, h2, h3, h4, h5, h6 {
 	font-weight: normal; color: #666;
 }
 
-h1 {
-	color: #222; border-bottom: 1px solid #ddd;
-	letter-spacing:-0.05em; font-weight: 700;
-	margin-top:0; padding-top:0;
+.nameBox {
+	font-weight: 700;	
+	padding-right: 20px;	
+}
+
+.jobTitleBox {
+	font-weight: 300;
+	font-style: italic;
+	
+	padding-left: 20px;
 }
 
 #floater {
@@ -35,15 +41,19 @@ h1 {
 	height: 400px; width: 80%; max-width: 800px; min-width: 400px;
 	margin: 0 auto;
 	background: #fff;
-	/*border: 4px solid #666;*/
 }
 
 #namebox {
 	
 	left: 0; right: 0; top: 0; bottom: 0;
 	text-align: center;
+	/*color: #222; */
 	
-	padding: 20px 20px 0px 20px;
+	padding: 20px 20px 10px 20px;
+
+	font-size: 20pt;
+
+	border-bottom: 1px solid #ddd;
 }
 
 #linkbox {	
@@ -51,10 +61,15 @@ h1 {
 	text-align: center;	
 }
 
+#linklist {
+
+}
+
 #linklist li {
 	display: inline;
 	list-style-type: none;
 	padding-right: 20px;
+	height: 100%;
 }
 
 #linklist li a {
@@ -64,11 +79,55 @@ h1 {
 	text-align: center;
 	font-size: 16pt;
 	font-weight: 300;
+	vertical-align: middle;
+
+	
+	padding-left: 36px;
 }
 
+#resumeLink {
+	background: transparent url(/img/resume_32.png) no-repeat left center;
+}
+
+#emailLink {
+	background: transparent url(/img/email_32.png) no-repeat left center;
+}
+
+#facebookLink {
+	background: transparent url(/img/facebook_32.png) no-repeat left center;	
+}
+
+#steamLink {
+	background: transparent url(/img/steam_32.png) no-repeat left center;	
+}
+
+#twitterLink {
+	background: transparent url(/img/twitter_32.png) no-repeat left center;	
+}
+
+#lastfmLink {
+	background: transparent url(/img/lastfm_32.png) no-repeat left center;	
+}
+
+#linkedinLink {
+	background: transparent url(/img/linkedin_32.png) no-repeat left center;	
+}
+
+#linklist li a img {
+	padding: 10px;
+}
+
+
+
 #linklist li a:hover, #linklist li a:focus {
-	background: #f8f8f8;
+	color: blue;
 }
 
 #linklist li a:active {
 	padding: 8px 7px 6px 7px;
+}
+
+.linkDivider {
+	border-right: 2px solid #38546d;
+	height: 100%;
+}
