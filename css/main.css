@@ -38,7 +38,7 @@ h1, h2, h3, h4, h5, h6 {
 #centered {
 	position: relative; 
 	clear: left;
-	height: 400px; width: 80%; max-width: 800px; min-width: 400px;
+	height: 400px; width: 80%; max-width: 1000px; min-width: 400px;
 	margin: 0 auto;
 	background: #fff;
 }
@@ -113,6 +113,10 @@ h1, h2, h3, h4, h5, h6 {
 	background: transparent url(/img/linkedin_32.png) no-repeat left center;	
 }
 
+#githubLink {
+	background: transparent url(/img/github_32.png) no-repeat left center;	
+}
+
 #linklist li a img {
 	padding: 10px;
 }
@@ -123,9 +127,6 @@ h1, h2, h3, h4, h5, h6 {
 	color: blue;
 }
 
-#linklist li a:active {
-	padding: 8px 7px 6px 7px;
-}
 
 .linkDivider {
 	border-right: 2px solid #38546d;
