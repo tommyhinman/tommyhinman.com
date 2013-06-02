@@ -62,8 +62,7 @@ h1, h2, h3, h4, h5, h6 {
 	width: 100%;
 }
 
-#linklist td {
-	display: inline;
+#linklist td {	
 	list-style-type: none;
 	padding-right: 20px;
 	height: 100%;
