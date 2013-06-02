@@ -47,12 +47,8 @@ h1, h2, h3, h4, h5, h6 {
 	
 	left: 0; right: 0; top: 0; bottom: 0;
 	text-align: center;
-	/*color: #222; */
-	
 	padding: 20px 20px 10px 20px;
-
 	font-size: 20pt;
-
 	border-bottom: 1px solid #ddd;
 }
 
@@ -61,19 +57,21 @@ h1, h2, h3, h4, h5, h6 {
 	text-align: center;	
 }
 
-#linklist {
-
+#linkbox table {
+	padding: 10px 10px 10px 36px;
+	width: 100%;
 }
 
-#linklist li {
+#linklist td {
 	display: inline;
 	list-style-type: none;
 	padding-right: 20px;
 	height: 100%;
 }
 
-#linklist li a {
-	padding: 7px; margin: 0;
+#linklist td a {
+	padding: 7px;
+	margin: 0;
 	text-decoration: none;
 	color: #000;
 	text-align: center;
@@ -81,8 +79,34 @@ h1, h2, h3, h4, h5, h6 {
 	font-weight: 300;
 	vertical-align: middle;
 
-	
-	padding-left: 36px;
+	padding-left: 40px;	
+	cursor: pointer;
+
+}
+
+#submenu-music table {
+	padding: 0px 0px 0px 5px;
+}
+
+#submenu-music table tr td {
+	padding: 5px;
+}
+
+#submenu-music table tr td a {
+	font-size: 12pt;
+	font-weight: 300;
+	text-align: left;
+	padding: 0px;
+}
+
+#submenu-music table tr td a:hover, #submenu-music table tr td a:focus {
+	color: blue;
+}
+
+
+
+#linklist td a:hover, #linklist td a:focus {
+	color: blue;
 }
 
 #resumeLink {
@@ -101,8 +125,8 @@ h1, h2, h3, h4, h5, h6 {
 	background: transparent url(/img/steam_32.png) no-repeat left center;	
 }
 
-#twitterLink {
-	background: transparent url(/img/twitter_32.png) no-repeat left center;	
+#musicLink {
+	background: transparent url(/img/music_32.png) no-repeat left center;	
 }
 
 #lastfmLink {
@@ -115,20 +139,4 @@ h1, h2, h3, h4, h5, h6 {
 
 #githubLink {
 	background: transparent url(/img/github_32.png) no-repeat left center;	
-}
-
-#linklist li a img {
-	padding: 10px;
-}
-
-
-
-#linklist li a:hover, #linklist li a:focus {
-	color: blue;
-}
-
-
-.linkDivider {
-	border-right: 2px solid #38546d;
-	height: 100%;
 }
