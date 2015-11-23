@@ -1,0 +1,74 @@
+<html ng-app="albumLists">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="/js/jquery.js" />
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0-beta.2/angular.min.js" crossorigin="anonymous"></script>
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular-animate.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.14.3/ui-bootstrap-tpls.min.js"></script>
+
+<script src="js/albumLists.js"></script>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+<link rel="stylesheet" href="css/albumLists.css">
+
+</head>
+
+<body ng-controller="albumListsController">
+
+<div class="jumbotron jumbotron-albums">
+	<div class="container">
+		<h1 class="album-list-title">Tommy's Albums of {[selectedYear]}</h1>
+	</div>
+</div>
+
+<div class="container album-list-container" >
+
+	<div class="row">
+		<div class="col-sm-offset-10 col-sm-2 col-xs-2">
+			<div class="btn-group album-year-selector" uib-dropdown is-open="status.isopen">
+				<button id="single-button" type="button" class="btn btn-primary" uib-dropdown-toggle ng-disabled="disabled">
+					Year: {[selectedYear]} <span class="caret"></span>
+				</button>
+				<ul class="uib-dropdown-menu" role="menu" aria-labelledby="single-button">
+					<li ng-repeat="a in options" role="menuitem"><a ng-click="selected(a)">{[a]}</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	{% for albumYear, albums in a.iteritems() %}
+		<div id="albumList{{albumYear}}" ng-show="{{albumYear}}==selectedYear">
+		{% for album in albums %}
+			<div class="row album">
+				<div class="col-xs-12 col-sm-4 album-column-art">
+					<img class="album-art" src="{{album.imgUrl}}" height="300" width="300" />
+				</div>
+				<div class="clearfix visible-xs-block"></div>
+				<div class="col-xs-12 col-sm-8 album-column-info">
+					<div class="album-column-info-xs visible-xs-block">
+						<div class="col-xs-2">
+							<h1 class="album-number">{{loop.index}}</h1>
+						</div>
+						<div class="col-xs-10">
+							<h1 class="album-artist-name">{{album.artistName}}</h1>
+							<h2 class="album-name">{{album.albumName}}</h2>
+						</div>
+					</div>
+					<div class="albumn-column-info-sm hidden-xs">
+						<h1 class="album-number">{{loop.index}}</h1>
+						<hr class="album-divider" />
+						<h1 class="album-artist-name">{{album.artistName}}</h1>
+						<h2 class="album-name">{{album.albumName}}</h2>
+					</div>
+				</div>
+
+
+			</div>
+			<hr/>
+		{% endfor %}
+		</div>
+	{% endfor %}
+	<button id="back-to-top" class="btn" href="#" onclick="$('html,body').animate({scrollTop:0},'slow');return false;">Back To Top</a>
+</div>
+</body>
+</html>

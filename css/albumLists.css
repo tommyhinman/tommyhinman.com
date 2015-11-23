@@ -1,0 +1,66 @@
+
+body {
+	font-family: Lato, Arial, sans-serif;
+	background-color:rgb(245, 246, 248);
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: Lato, Arial, sans-serif;
+	font-weight: normal; color: #666;
+}
+
+@media (max-width: 767px) {
+	.album-year-selector {
+		padding-left:20px;
+	}
+}
+
+.album-year-selector {
+	text-align: right;
+}
+
+.album-list-container {
+	padding: 10px 0px 10px 0px;
+}
+
+
+.album {
+	padding: 20px 0px 20px 0;
+}
+
+
+.album-column-art {
+	text-align: center;
+}
+
+.album-column-info {
+
+}
+
+.album-art {
+
+}
+
+h1.album-list-title {
+	text-align: center;
+}
+
+hr.album-divider {
+    border: 0;
+    height: 1px;
+    background: #333;
+    background-image: linear-gradient(to right, #ddd, rgb(51, 122, 183), #ddd);
+}
+
+h1.album-number {
+	color: rgb(51, 122, 183);
+}
+
+h1.album-artist-name {
+	font-weight: bold;
+}
+
+h2.album-name {
+	font-size:20pt;
+	font-style:italic;
+}

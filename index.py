@@ -3,6 +3,8 @@ import os
 import jinja2
 import logging
 
+from lists import ListsHandler
+
 jinja_environment = jinja2.Environment(
 	loader=jinja2.FileSystemLoader(os.path.dirname(__file__)))
 
@@ -25,7 +27,10 @@ class ResumeHandler(webapp2.RequestHandler):
 		template = jinja_environment.get_template('templates/resume.html')
 		self.response.out.write(template.render(template_values))
 
+
+
 application = webapp2.WSGIApplication([
 	('/', MainHandler),
 	('/resume', ResumeHandler),
+	('/lists', ListsHandler),
 ], debug=True)
