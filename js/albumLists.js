@@ -5,10 +5,12 @@ angular.module('albumLists', ['ngAnimate', 'ui.bootstrap'])
 	}])
 	.controller('albumListsController', function ($scope, $log, $location) {
 		$scope.options = ['2011','2012','2013','2014']
-		if($location.path()) {
+		if($location.path() != '') {
 			$scope.selectedYear = $location.path().replace('/','');
+		} else {
+			$scope.selectedYear = '2014';
 		}
-
+		
 		$scope.status = {
 			isopen: false
 		};
