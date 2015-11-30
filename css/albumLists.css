@@ -13,6 +13,14 @@ h1, h2, h3, h4, h5, h6 {
 	.album-year-selector {
 		padding-left:20px;
 	}
+
+	.container {
+		margin: 0px;
+	}
+
+	.row {
+		margin: 0px;
+	}
 }
 
 .album-year-selector {
