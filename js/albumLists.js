@@ -23,6 +23,14 @@ angular.module('albumLists', ['ngAnimate', 'ui.bootstrap'])
 		$scope.selected = function(item) {
 			$scope.selectedYear = item;
 			$location.path(item);
+			loadImagesForYear($scope.selectedYear);
 		}
 
+		loadImagesForYear($scope.selectedYear);
 	});
+
+	function loadImagesForYear(year) {
+		$("#albumList" + year).find(".album-art").each(function() {
+			$(this).attr("src", $(this).attr("ng-slow-src"));
+		} )
+	}
