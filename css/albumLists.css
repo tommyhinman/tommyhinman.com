@@ -38,7 +38,7 @@ h1, h2, h3, h4, h5, h6 {
 
 
 .album-column-art {
-	text-align: center;
+	/*text-align: center;*/
 }
 
 .album-column-info {
@@ -47,6 +47,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .album-art {
 
+}
+
+.listInfo {
+	padding-left: 15px;
 }
 
 h1.album-list-title {

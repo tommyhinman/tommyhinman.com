@@ -35,7 +35,7 @@
 <div class="container album-list-container ng-cloak" >
 
 	<div class="row">
-		<div class="col-sm-offset-10 col-sm-2 col-xs-2">
+		<div class="col-sm-2 col-xs-2">
 			<div class="btn-group album-year-selector" uib-dropdown is-open="status.isopen">
 				<button id="single-button" type="button" class="btn btn-primary" uib-dropdown-toggle ng-disabled="disabled">
 					Year: {[selectedYear]} <span class="caret"></span>
@@ -43,11 +43,20 @@
 				<ul class="uib-dropdown-menu" role="menu" aria-labelledby="single-button">
 					<li ng-repeat="a in options" role="menuitem"><a ng-click="selected(a)">{[a]}</a></li>
 				</ul>
-			</div>
+			</div>	
 		</div>
 	</div>
 	{% for albumYear, listData in data.iteritems() %}
+
 		<div id="albumList{{albumYear}}" ng-show="{{albumYear}}==selectedYear">
+			<div class="row listInfo">
+				<div class="col-4">
+					<h3><strong>Albums:</strong> {{listData.spreadsheet.ratingCount}}</h3>
+					<h3><strong>Average Score:</strong> {{listData.spreadsheet.averageRating}}</h3>
+					<h3><a href="{{listData.spreadsheet.link}}">Spreadsheet</a></h3>
+					<hr/>
+				</div>
+			</div>
 		{% for album in listData.list %}
 			<div class="row album">
 				<div class="col-xs-12 col-sm-4 album-column-art">

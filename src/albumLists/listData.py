@@ -2,6 +2,54 @@ import logging
 
 def getAlbumListData():
 	
+	list2015 = list()
+	list2015.append(Album("Sufjan Stevens", "Carrie & Lowell", "https://coverartarchive.org/release/87b4a614-d53d-4495-b176-5d4f2bb353e6/9658447626.jpg"))
+	list2015.append(Album("Pile", "You're Better Than This", "https://coverartarchive.org/release-group/dc1fe040-2d5f-465d-a971-ee84d0c0f12c/front.jpg"))
+	list2015.append(Album("Courtney Barnett", "Sometimes I Sit and Think, and Sometimes I Just Sit", "https://coverartarchive.org/release-group/136815ec-7b75-4477-9f35-8e6adb926700/front.jpg"))
+	list2015.append(Album("Hop Along", "Painted Shut", "https://coverartarchive.org/release/8114b878-c9ff-4c4f-bc19-5baabc10f32c/10513425245.jpg"))
+	list2015.append(Album("Titus Andronicus", "The Most Lamentable Tragedy", "https://coverartarchive.org/release-group/9b3cb91c-5cf3-45fe-8c32-8449e2162f57/front.jpg"))
+	list2015.append(Album("Elder", "Lore", "https://coverartarchive.org/release/ee6e329d-b02e-4d62-bf4f-74770fda6864/9620598741.jpg"))
+	list2015.append(Album("Viet Cong", "Viet Cong", "https://coverartarchive.org/release/5d5fc614-25fe-4b89-8747-f4357f7a7757/9260448034.jpg"))
+	list2015.append(Album("Car Seat Headrest", "Teens of Style", "https://coverartarchive.org/release/5f8e989d-cd81-4b7b-85c8-13c7f071bb94/11971023916.jpg"))
+	list2015.append(Album("Sleater-Kinney", "No Cities to Love", "https://coverartarchive.org/release-group/aeacebc7-34fc-44ff-bde9-779e6fde7ade/front.jpg"))
+	list2015.append(Album("Loma Prieta", "Self Portrait", "https://f1.bcbits.com/img/a1468573006_10.jpg"))
+	list2015.append(Album("Punch Brothers", "The Phosphorescent Blues", "https://coverartarchive.org/release-group/c2313d70-3da6-48e4-b310-1982b681e09d/front.jpg"))
+	list2015.append(Album("Bosse-de-Nage", "All Fours", "https://coverartarchive.org/release/f5380e86-3aa8-462b-bb02-d4701f6a48f7/9793637407.jpg"))
+	list2015.append(Album("Deerhunter", "Fading Frontier", "https://coverartarchive.org/release-group/d9ea57c7-5582-4159-a901-d058b3468586/front.jpg"))
+	list2015.append(Album("Ensemble Signal & Steve Reich", "Music for 18 Musicians", "https://coverartarchive.org/release-group/4795a9c0-dfcf-4daa-9b06-9c7bcefe148d/front.jpg"))
+	list2015.append(Album("Godspeed You! Black Emperor", "Asunder, Sweet and Other Distress", "https://coverartarchive.org/release-group/c74035da-e212-4048-abed-40a7b5343e9a/front.jpg"))
+	list2015.append(Album("Nicolas Jaar", "Nymphs II/III/IV", "http://i.imgur.com/NGHXYIm.png?1"))
+	list2015.append(Album("Ought", "Sun Coming Down", "https://coverartarchive.org/release-group/ffa2d4a1-cd45-438a-be58-97c428d40844/front.jpg"))
+	list2015.append(Album("Julien Baker", "Sprained Ankle", "https://coverartarchive.org/release-group/9d694f1c-fc4b-4372-ab6e-634844f46be9/front.jpg"))
+	list2015.append(Album("The Staves", "If I Was", "https://coverartarchive.org/release/1e461cfc-a942-4a8c-8111-6df3a26c3c9e/9965719439.png"))
+	list2015.append(Album("Jamie xx", "In Colour", "https://coverartarchive.org/release-group/a903a977-5932-4cc2-a064-57a596658b3d/front.jpg"))
+	list2015.append(Album("Girl Band", "Holding Hands with Jamie", "https://coverartarchive.org/release-group/970fe64c-2deb-491e-86d7-41b729118ae0/front.jpg"))
+	list2015.append(Album("Julia Holter", "Have You in my Wilderness", "https://coverartarchive.org/release-group/3cdb557c-f143-4db9-a49a-a8781a26a247/front.jpg"))
+	list2015.append(Album("Patrick Watson", "Love Songs for Robots", "https://coverartarchive.org/release-group/ec9a69c6-35fc-4705-aeb6-80373dfa1497/front.jpg"))
+	list2015.append(Album("Birds in Row", "Personal War", "https://coverartarchive.org/release-group/be249c5a-b686-40f2-9dc8-75a8ed456b2a/front.jpg"))
+	list2015.append(Album("Christopher Paul Stelling", "Labor Against Waste", "http://s3.amazonaws.com/content.sitezoogle.com/u/149235/0ee2eae2f415bd1a80275a64fda852a7694a7e9c/large/10723940-921955494493144-1660504926-n.jpg?1427746844"))
+	list2015.append(Album("American Wrestlers", "American Wrestlers", "https://coverartarchive.org/release-group/4932c0f7-a721-49d9-b3f9-15f226a589fc/front.jpg"))
+	list2015.append(Album("Jeff Rosenstock", "We Cool?", "https://coverartarchive.org/release-group/1052f90a-b695-497b-ab6a-ec2dc0e69de3/front.jpg"))
+	list2015.append(Album("Jason Isbell", "Something More than Free", "http://www.jasonisbell.com/wp-content/uploads/2013/06/isbell-something-more-than-free.jpg"))
+	list2015.append(Album("Bop English", "Constant Bop", "https://coverartarchive.org/release-group/d1134046-3ee8-48a7-9c30-6bb484f9c240/front.jpg"))
+	list2015.append(Album("Colin Stetson / Sarah Neufeld", "Never Were the Way She Was", "https://coverartarchive.org/release-group/22b13783-b1ca-4953-90e8-2ca5a2bce257/front.jpg"))
+
+	runnersUp2015 = list()
+	runnersUp2015.append(Album("Baroness", "Purple", "https://coverartarchive.org/release-group/df98ad28-b0b2-4aa6-8353-eea4146b93f1/front.jpg"))
+	runnersUp2015.append(Album("Have you ever seen the Jane Fonda Aerobic VHS?", "Teenage Sweetheart", "https://scontent-sea1-1.xx.fbcdn.net/hphotos-xtf1/v/t1.0-9/11224327_421491128054598_548165804995464950_n.jpg?oh=0ddb27f43b84cf30110b9e1fc2c3734f&oe=57162AB7"))
+	runnersUp2015.append(Album("Oneohtrix Point Never", "Garden of Delete", "https://coverartarchive.org/release-group/5acba13f-0e96-4119-856a-6cd561ccd694/front.jpg"))
+	runnersUp2015.append(Album("Royal Headache", "High", "https://coverartarchive.org/release-group/378f3df6-f7e5-4fb5-b313-2ca370ea216b/front.jpg"))
+	runnersUp2015.append(Album("Sports", "All of Something", "https://coverartarchive.org/release-group/35628285-2da7-4db4-a5e6-5585791d2d61/front.jpg"))
+
+	spreadsheet2015 = dict()
+	spreadsheet2015["link"] = "https://docs.google.com/spreadsheets/d/1d-jxvDuYvmbqPeSled3RfJIzcZMeKXekiLe02JTR4hM/edit#gid=0"
+	spreadsheet2015["ratingCount"] = "550"
+	spreadsheet2015["averageRating"] = "6.21"
+
+	albums2015 = dict()
+	albums2015["list"] = list2015
+	albums2015["runnersUp"] = runnersUp2015
+	albums2015["spreadsheet"] = spreadsheet2015
 
 	list2014 = list()
 	list2014.append(Album("Swans", "To Be Kind", "http://coverartarchive.org/release-group/d2df1a2d-4da1-40a3-a825-5674ce117579/front-500.jpg"))
@@ -32,7 +80,7 @@ def getAlbumListData():
 	list2014.append(Album("Run The Jewels","RTJ2","http://coverartarchive.org/release-group/581d7ac8-8f1d-4d4a-a224-de9c9cd76b39/front-500.jpg"))
 	list2014.append(Album("A Sunny Day In Glasgow","Sea When Absent","http://coverartarchive.org/release-group/cc514c1c-1b6c-476d-bc93-d96ef0e21757/front-500.jpg"))
 	list2014.append(Album("A Winged Victory For The Sullen","Atmos","http://coverartarchive.org/release-group/7bc3d477-b550-40b0-abdb-febe66b92290/front-500.jpg"))
-	list2014.append(Album("Dope Body","Lifer","https://i.ytimg.com/vi/BtaOjS04smU/maxresdefault.jpg"))
+	list2014.append(Album("Dope Body","Lifer","http://cdn.pitchfork.com/tracks/17017/homepage_large.f11d44b5.jpg"))
 	list2014.append(Album("Goat","Commune","https://ia902302.us.archive.org/2/items/mbid-73159b10-18ef-4dd0-91dc-3facb6ecb6df/mbid-73159b10-18ef-4dd0-91dc-3facb6ecb6df-8309930145_thumb500.jpg"))
 
 	runnersUp2014 = list()
@@ -201,10 +249,10 @@ def getAlbumListData():
 	list2011.append(Album("Fuck The Facts","Die Miserable","http://coverartarchive.org/release-group/62005bd4-f866-468c-a80b-83549ef32b75/front.jpg"))
 	list2011.append(Album("Mastodon","The Hunter","http://coverartarchive.org/release-group/3c73bc27-4567-4957-8cfb-929d79b3a6ce/front.jpg"))
 	list2011.append(Album("Trap Them","Darker Handcraft","http://www.brooklynvegan.com/img/metal/various/Trap_Them_-_Darker_Handcraft_artwork.jpg"))
-	list2011.append(Album("*shels","Plains Of The Purple Buffalo","http://coverartarchive.org/release-group/3768f323-10a6-460e-8d73-914f594b81bf/front.jpg"))
+	list2011.append(Album("*shels","Plains Of The Purple Buffalo","https://coverartarchive.org/release-group/3768f323-10a6-460e-8d73-914f594b81bf/front.jpg"))
 	list2011.append(Album("Tim Hecker","Ravedeath,1972","http://coverartarchive.org/release-group/b55c9544-ba14-436f-a97e-2157b10d540d/front.jpg"))
 	list2011.append(Album("The Roots","Undun","http://coverartarchive.org/release-group/3d5c691e-61bd-4235-999b-31ebea927227/front.jpg"))
-	list2011.append(Album("Cormorant","Dwellings","http://www.invisibleoranges.com/wp-content/uploads/2012/01/cormorant_dwellings.jpg"))
+	list2011.append(Album("Cormorant","Dwellings","https://f1.bcbits.com/img/0001532772_10.jpg"))
 	list2011.append(Album("Corrupted","Garten Der Unbewusstheit","http://coverartarchive.org/release-group/8d440a0f-8731-4736-86ef-36cd9bab3bd0/front.jpg"))
 	list2011.append(Album("M83","Hurry Up We're Dreaming","http://coverartarchive.org/release-group/5f898a60-acc5-48fc-a11b-2926084c0924/front.jpg"))
 	list2011.append(Album("Widowspeak","Widowspeak","http://ia600403.us.archive.org/18/items/mbid-ed1d9bee-fdaf-4a26-bc5d-f3c7a25780b9/mbid-ed1d9bee-fdaf-4a26-bc5d-f3c7a25780b9-6426811654_thumb500.jpg"))
@@ -243,6 +291,7 @@ def getAlbumListData():
 
 
 	listData = dict()
+	listData["2015"] = albums2015
 	listData["2014"] = albums2014
 	listData["2013"] = albums2013
 	listData["2012"] = albums2012

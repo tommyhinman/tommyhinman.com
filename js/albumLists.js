@@ -4,11 +4,11 @@ angular.module('albumLists', ['ngAnimate', 'ui.bootstrap'])
 	  $interpolateProvider.endSymbol(']}');
 	}])
 	.controller('albumListsController', function ($scope, $log, $location) {
-		$scope.options = ['2011','2012','2013','2014']
+		$scope.options = ['2011','2012','2013','2014','2015']
 		if($location.path() != '') {
 			$scope.selectedYear = $location.path().replace('/','');
 		} else {
-			$scope.selectedYear = '2014';
+			$scope.selectedYear = '2015';
 		}
 		
 		$scope.status = {
