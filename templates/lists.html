@@ -60,7 +60,9 @@
 		{% for album in listData.list %}
 			<div class="row album">
 				<div class="col-xs-12 col-sm-4 album-column-art">
-					<img class="album-art" ng-slow-src="{{album.imgUrl}}" height="300" width="300" />
+					<a href="{{album.previewLink}}">
+						<img class="album-art" ng-slow-src="{{album.imgUrl}}" height="300" width="300" />
+					</a>
 				</div>
 				<div class="clearfix visible-xs-block"></div>
 				<div class="col-xs-12 col-sm-8 album-column-info">
@@ -88,7 +90,9 @@
 			{% for album in listData.runnersUp %}
 				<div class="row album">
 					<div class="col-xs-12 col-sm-4 album-column-art">
-						<img class="album-art" ng-slow-src="{{album.imgUrl}}" height="300" width="300" />
+						<a href="{{album.previewLink}}">
+							<img class="album-art" ng-slow-src="{{album.imgUrl}}" height="300" width="300" />
+						</a>
 					</div>
 					<div class="clearfix visible-xs-block"></div>
 					<div class="col-xs-12 col-sm-8 album-column-info">
