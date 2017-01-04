@@ -2,6 +2,61 @@ import logging
 
 def getAlbumListData():
 	
+	list2016 = list()
+	list2016.append(Album("Pinegrove","Cardinal","https://coverartarchive.org/release/470f6a84-5d38-4544-8130-aa80b67c4fe7/12958866716.jpg"))
+	list2016.append(Album("Car Seat Headrest","Teens of Denial","https://coverartarchive.org/release-group/7413db7e-163c-4e48-bd8e-c41fd466b2c1/front.jpg"))
+	list2016.append(Album("Radiohead","A Moon Shaped Pool","https://coverartarchive.org/release/0c46011c-2c86-4c53-8226-10c79f746e6f/13889765748.jpg"))
+	list2016.append(Album("Angel Olsen","My Woman","https://coverartarchive.org/release-group/c9db1003-a83a-49b7-b04c-237e05260969/front.jpg"))
+	list2016.append(Album("Michael Kiwanuka","Love & Hate","https://coverartarchive.org/release-group/c51bb243-59ac-4de0-9a51-4ead3d4e1bf8/front.jpg"))
+
+	list2016.append(Album("Anderson .Paak","Malibu","https://coverartarchive.org/release/844eb096-2b84-4c8f-9922-7f287126b39e/12723136519.jpg"))
+	list2016.append(Album("Nicolas Jaar","Sirens","https://coverartarchive.org/release-group/9ce4d1c9-31d4-410b-98cf-207b85086e89/front.jpg"))
+	list2016.append(Album("Whitney","Light Upon the Lake","https://coverartarchive.org/release-group/6f6b2682-b458-4560-9fa9-73a6b6302e32/front.jpg"))
+	list2016.append(Album("A Tribe Called Quest","We Got it from Here... Thank You 4 Your Service","https://coverartarchive.org/release-group/b445860f-edd9-4160-841c-fccf5533ecbd/front.jpg"))
+	list2016.append(Album("MONEY","Suicide Songs","https://coverartarchive.org/release-group/0c192e53-6b2c-4ece-bea5-624a44f40274/front.jpg"))
+
+	list2016.append(Album("Slow Dakota","The Ascension of Slow Dakota","https://img.discogs.com/mLRlix0IyMDj0t1PsHYFPEux35c=/fit-in/500x500/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-8974847-1472575583-2397.jpeg.jpg"))
+	list2016.append(Album("Explosions in the Sky","The Wilderness","https://coverartarchive.org/release/f8068355-0dce-4845-88ca-1330764db570/13191737587.png"))
+	list2016.append(Album("Parquet Courts","Human Performance","https://coverartarchive.org/release-group/3353a8a0-a5ab-4970-b34e-090afcc2bba7/front.jpg"))
+	list2016.append(Album("Yak","Alas Salvation","https://coverartarchive.org/release-group/3e71c910-8365-400f-be1c-6d2e85575c6d/front.jpg"))
+	list2016.append(Album("Bon Iver","22, A Million","https://coverartarchive.org/release-group/f0e8f425-a941-48df-b5d7-2ceeaaf77c71/front.jpg"))
+
+	list2016.append(Album("Greys","Outer Heaven","https://coverartarchive.org/release-group/205f7615-fb62-4e4d-9e3a-f26198c4c679/front.png"))
+	list2016.append(Album("The Drones","Feelin Kinda Free","https://coverartarchive.org/release-group/2636b2df-f2b7-48dd-866a-09c0e6c54b64/front.jpg"))
+	list2016.append(Album("Swans","The Glowing Man","https://coverartarchive.org/release/4c9dbfae-4744-4379-b9ad-de28670c944a/13234260103.jpg"))
+	list2016.append(Album("The Avalanches","Wildflower","https://coverartarchive.org/release-group/e27e2c64-8e49-43d2-8468-c3b484cf11f0/front.jpg"))
+	list2016.append(Album("Hamilton Leithauser + Rostam","I Had a Dream That You Were Mine","https://coverartarchive.org/release/059ad661-7be2-4ba9-b495-32254ef4887a/14709768096.jpg"))
+
+	list2016.append(Album("Big Thief","Masterpiece","https://coverartarchive.org/release-group/134104b9-926e-40fc-a975-e6a0f3b238d5/front.jpg"))
+	list2016.append(Album("Japanese Breakfast","Psychopomp","https://coverartarchive.org/release-group/ac6989e6-0589-41e9-b03c-1c4cb80a27d6/front.jpg"))
+	list2016.append(Album("John K. Samson","Winter Wheat","https://coverartarchive.org/release/a734090d-0f2b-4cda-bd5f-b3fad7a932ae/15196950742.jpg"))
+	list2016.append(Album("Preoccupations","Preoccupations","https://coverartarchive.org/release/d2a9d069-efd0-4a57-93e0-a43f5299817f/14092596668.jpg"))
+	list2016.append(Album("The Hotelier","Goodness","https://coverartarchive.org/release/88eb2526-e91f-4405-b6d8-eeef3b3cd8cd/13667263818.jpg"))
+
+	list2016.append(Album("Chris Staples","Golden Age","https://images-na.ssl-images-amazon.com/images/I/61FZkJnTRIL.jpg"))
+	list2016.append(Album("PUP","The Dream is Over","https://coverartarchive.org/release-group/98b0184a-c19c-4a21-917f-b09907eccf85/front.jpg"))
+	list2016.append(Album("Weaves","Weaves","https://coverartarchive.org/release-group/a39ef3dd-77a6-47c3-ad56-f6bbc998aaf5/front.jpg"))	
+	list2016.append(Album("Danny Brown","Atrocity Exhibition","https://coverartarchive.org/release-group/88f4f8e5-ee88-4050-84ad-cf73f7c2b19a/front.jpg"))
+	list2016.append(Album("Nick Cave and the Bad Seeds","Skeleton Tree","https://coverartarchive.org/release-group/49339024-c6b4-4345-b521-6349463513cb/front.jpg"))
+	
+	runnersUp2016 = list()
+
+	runnersUp2016.append(Album("Holy Esque","At Hope's Ravine","https://coverartarchive.org/release-group/a53ab4fc-1d0d-4092-b4f6-5420de0ba8c5/front.jpg"))
+	runnersUp2016.append(Album("Mothers","When You Walk a Long Distance you are Tired","https://coverartarchive.org/release-group/1aca6863-4dda-4a6e-8818-e1bc8c756373/front.jpg"))
+	runnersUp2016.append(Album("Oathbreaker","Rheia","https://coverartarchive.org/release-group/081fc686-c66a-4981-827c-c40337834d91/front.png"))
+	runnersUp2016.append(Album("Odd Nosdam","Sisters","https://coverartarchive.org/release/76056e56-d6a8-4591-912a-69ebe1d91011/12890639066.jpg"))
+	runnersUp2016.append(Album("William Tyler","Modern Country","https://coverartarchive.org/release/dc32ae42-0cbb-47f0-80ac-874176f085f8/13670993563.jpg"))
+	
+	spreadsheet2016 = dict()
+	spreadsheet2016["link"] = "https://docs.google.com/spreadsheets/d/1oB34W8PMvObQHQQpNRwneSXreFHbHU0HdLbcbsaW3qw"
+	spreadsheet2016["ratingCount"] = "589"
+	spreadsheet2016["averageRating"] = "6.29"
+
+	albums2016 = dict()
+	albums2016["list"] = list2016
+	albums2016["runnersUp"] = runnersUp2016
+	albums2016["spreadsheet"] = spreadsheet2016
+
 	list2015 = list()
 	list2015.append(Album("Sufjan Stevens", "Carrie & Lowell", "https://coverartarchive.org/release/87b4a614-d53d-4495-b176-5d4f2bb353e6/9658447626.jpg"))
 	list2015.append(Album("Pile", "You're Better Than This", "https://coverartarchive.org/release-group/dc1fe040-2d5f-465d-a971-ee84d0c0f12c/front.jpg"))
@@ -291,6 +346,7 @@ def getAlbumListData():
 
 
 	listData = dict()
+	listData["2016"] = albums2016
 	listData["2015"] = albums2015
 	listData["2014"] = albums2014
 	listData["2013"] = albums2013

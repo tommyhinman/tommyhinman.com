@@ -4,7 +4,7 @@ angular.module('albumLists', ['ngAnimate', 'ui.bootstrap'])
 	  $interpolateProvider.endSymbol(']}');
 	}])
 	.controller('albumListsController', function ($scope, $log, $location) {
-		$scope.options = ['2011','2012','2013','2014','2015']
+		$scope.options = ['2011','2012','2013','2014','2015','2016']
 		if($location.path() != '') {
 			$scope.selectedYear = $location.path().replace('/','');
 		} else {
