@@ -8,7 +8,7 @@ angular.module('albumLists', ['ngAnimate', 'ui.bootstrap'])
 		if($location.path() != '') {
 			$scope.selectedYear = $location.path().replace('/','');
 		} else {
-			$scope.selectedYear = '2015';
+			$scope.selectedYear = '2016';
 		}
 		
 		$scope.status = {
