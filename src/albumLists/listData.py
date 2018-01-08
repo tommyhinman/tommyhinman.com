@@ -1,7 +1,65 @@
 import logging
 
 def getAlbumListData():
-	
+
+	list2017 = list()
+
+	list2017.append(Album("Big Thief","Capacity","https://coverartarchive.org/release-group/3fd9b616-15ec-4a3d-81df-866bd9942202/front.jpg",""))
+	list2017.append(Album("Protomartyr","Relatives in Descent","https://coverartarchive.org/release/4734f1c1-6529-41ac-9c88-5ff82cb6e13c/18324922657.jpg",""))
+	list2017.append(Album("Idles","Brutalism","https://coverartarchive.org/release/6d4e53b2-82d1-4154-907d-00f243284f2b/16733187540.jpg",""))
+	list2017.append(Album("Gang of Youths","Go Farther in Lightness","https://coverartarchive.org/release/05a13538-a9c8-45cc-87b1-6fe51bce08f7/18444950127.jpg",""))
+	list2017.append(Album("Priests","Nothing Feels Natural","https://coverartarchive.org/release/003c411f-e563-461b-963b-f3ec51498975/15687611371.jpg",""))
+
+	list2017.append(Album("Manchester Orchestra","A Black Mile to the Surface","https://coverartarchive.org/release-group/0e044656-b567-473e-ad96-bec356ce2aba/front.jpg",""))
+	list2017.append(Album("Jesca Hoop","Memories are Now","https://coverartarchive.org/release-group/0f843344-01b0-4b18-a7f6-568f2f0b0d57/front.jpg",""))
+	list2017.append(Album("Slowdive","Slowdive","https://coverartarchive.org/release-group/9318347d-b4bc-4b50-bd5e-c9a9fcb9aa98/front.jpg",""))
+	list2017.append(Album("Fleet Foxes","Crack-Up","https://coverartarchive.org/release-group/0a35f45c-c89c-418a-93e5-e29ed1d34caf/front.jpg",""))
+	list2017.append(Album("Elder","Reflections of a Floating World","https://coverartarchive.org/release-group/474f819f-def3-49c8-b764-381649d9e8c3/front.png",""))
+
+	list2017.append(Album("Broken Social Scene","Hug of Thunder","https://coverartarchive.org/release-group/02c033c9-f660-48cb-9927-531a02a6bd9a/front.jpg",""))
+	list2017.append(Album("Pile","A Hairshirt of Purpose","https://coverartarchive.org/release/5b32481d-d434-4841-97bf-84802472135d/16362889103.jpg",""))
+	list2017.append(Album("The National","Sleep Well Beast","https://coverartarchive.org/release/60a2da10-a7bc-43a1-8e36-eeffc624034d/16694939757.jpg",""))
+	list2017.append(Album("Kendrick Lamar","DAMN.","https://coverartarchive.org/release-group/b88655ba-7469-48b8-a296-b9011ab73ef3/front.jpg",""))
+	list2017.append(Album("Julien Baker","Turn Out the Lights","https://coverartarchive.org/release-group/5768576a-679d-4ae4-a04d-e41da4998aa1/front.jpg",""))
+
+	list2017.append(Album("All Them Witches","Sleeping Through the War","https://coverartarchive.org/release-group/d83178d3-82da-460d-a7b7-481212c50407/front.png",""))
+	list2017.append(Album("Converge","The Dusk in Us","https://coverartarchive.org/release-group/fe96f1f4-5c9f-4a39-a9d1-181dd3f4c54b/front.jpg",""))
+	list2017.append(Album("Rolling Blackouts Coastal Fever","The French Press","https://coverartarchive.org/release-group/aa1eb1e1-4f46-43c2-83d6-94ca9e20a9de/front.jpg",""))
+	list2017.append(Album("Blanck Mass","World Eater","https://coverartarchive.org/release-group/4b0b8787-57c2-4374-9d5d-63a9e4440dff/front.jpg",""))
+	list2017.append(Album("Wolf Alice","Visions of a Life","https://coverartarchive.org/release-group/7f231c61-20b2-49d6-ac66-1cacc4cc775f/front.png",""))
+
+	list2017.append(Album("Waxahatchee","Out in the Storm","https://coverartarchive.org/release-group/b3808167-f635-4e88-b0c4-a7873e86237e/front.jpg",""))
+	list2017.append(Album("Caddywhompus","Odd Hours","https://coverartarchive.org/release-group/779b0f7e-c925-4240-9fd6-d2aa20b8c051/front.jpg",""))
+	list2017.append(Album("Julie Byrne","Not Even Happiness","https://coverartarchive.org/release-group/5bb8e065-25f9-4427-85a6-56979cb99b19/front.jpg",""))
+	list2017.append(Album("Charlotte Gainsbourg","Rest","https://coverartarchive.org/release-group/78ccbb45-a0d2-47f0-b43e-0716831c7864/front.jpg",""))
+	list2017.append(Album("Sorority Noise","You're not as ____ as you Think","https://coverartarchive.org/release-group/625ae1df-cb44-40fa-bc56-46eda0c9ce8b/front.jpg",""))
+
+	list2017.append(Album("Do Make Say Think","Stubborn Persistent Illusions","https://coverartarchive.org/release-group/d17b9d5a-3a89-4650-94a3-81ca88375828/front.jpg",""))
+	list2017.append(Album("Grandbrothers","Open","https://coverartarchive.org/release-group/66610789-fd17-404b-b894-2272012ca046/front.jpg",""))
+	list2017.append(Album("Billy Woods","Known Unknowns","https://coverartarchive.org/release-group/7f3f840b-8ca2-4d7b-a52b-daf45708eb62/front.jpg",""))
+	list2017.append(Album("Quicksand","Interiors","https://coverartarchive.org/release-group/985de8de-1a8b-4ee5-91ce-a1e6aefad108/front.jpg",""))
+	list2017.append(Album("Alvvays","Antisocialites","https://coverartarchive.org/release-group/1f0a3090-ae8c-4fbd-9b70-b4371961ef11/front.jpg",""))
+
+	runnersUp2017 = list()
+
+	runnersUp2017.append(Album("Alex Cameron","Forced Witness","https://coverartarchive.org/release-group/43f7ce86-9448-4914-a867-5220b4a7555d/front.jpg",""))
+	runnersUp2017.append(Album("Ibeyi","Ash","https://coverartarchive.org/release-group/19f89c3e-3802-423e-b155-7e39104abff7/front.jpg",""))
+	runnersUp2017.append(Album("Photay","Onism","https://coverartarchive.org/release-group/8063670b-1bd7-4ef8-a239-b5c80548462d/front.jpg",""))
+	runnersUp2017.append(Album("Thunder Dreamer","Capture","https://f4.bcbits.com/img/a1250759136_10.jpg",""))
+	runnersUp2017.append(Album("Young Jesus","S/T","http://giganticnoise.com/wp-content/uploads/2017/07/Young-Jesus-Front-Cover.jpg",""))
+
+	spreadsheet2017 = dict()
+	spreadsheet2017["link"] = "https://docs.google.com/spreadsheets/d/1TwqYRoASC53dyPAufxxoMBPv4efacT3zJ9aZrQxBV-g/edit#gid=0"
+	spreadsheet2017["ratingCount"] = "518"
+	spreadsheet2017["averageRating"] = "6.36"
+
+	albums2017 = dict()
+	albums2017["list"] = list2017
+	albums2017["runnersUp"] = runnersUp2017
+	albums2017["spreadsheet"] = spreadsheet2017
+
+
+
 	list2016 = list()
 	list2016.append(Album("Pinegrove","Cardinal","https://coverartarchive.org/release/470f6a84-5d38-4544-8130-aa80b67c4fe7/12958866716.jpg", "https://open.spotify.com/album/2SmrUzUMMOYQqoPuOhlhjw"))
 	list2016.append(Album("Car Seat Headrest","Teens of Denial","https://coverartarchive.org/release-group/7413db7e-163c-4e48-bd8e-c41fd466b2c1/front.jpg", "https://open.spotify.com/album/26DseQO366JfXwIP7dIgQj"))
@@ -20,7 +78,7 @@ def getAlbumListData():
 	list2016.append(Album("Bon Iver","22, A Million","https://coverartarchive.org/release-group/f0e8f425-a941-48df-b5d7-2ceeaaf77c71/front.jpg", "https://open.spotify.com/album/1PgfRdl3lPyACfUGH4pquG"))
 	list2016.append(Album("Parquet Courts","Human Performance","https://coverartarchive.org/release-group/3353a8a0-a5ab-4970-b34e-090afcc2bba7/front.jpg", "https://open.spotify.com/album/4RNew41ZeRuoRNg3YAhvpe"))
 	list2016.append(Album("Yak","Alas Salvation","https://coverartarchive.org/release-group/3e71c910-8365-400f-be1c-6d2e85575c6d/front.jpg", "https://open.spotify.com/album/79eEK4Zv0dqVXrarAmqozS"))
-	
+
 	list2016.append(Album("Greys","Outer Heaven","https://coverartarchive.org/release-group/205f7615-fb62-4e4d-9e3a-f26198c4c679/front.png", "https://open.spotify.com/album/0wB19rOCyof5vPv6pYnCDH"))
 	list2016.append(Album("The Drones","Feelin Kinda Free","https://coverartarchive.org/release-group/2636b2df-f2b7-48dd-866a-09c0e6c54b64/front.jpg", "https://open.spotify.com/album/4qv5FxVbJgGyHJZKt2u0qv"))
 	list2016.append(Album("Swans","The Glowing Man","https://coverartarchive.org/release/4c9dbfae-4744-4379-b9ad-de28670c944a/13234260103.jpg", "https://open.spotify.com/album/6kYSd8r3ef5bssfOO58PX4"))
@@ -35,10 +93,10 @@ def getAlbumListData():
 
 	list2016.append(Album("Chris Staples","Golden Age","https://images-na.ssl-images-amazon.com/images/I/61FZkJnTRIL.jpg", "https://open.spotify.com/album/3kcttgC0Cwuc1ZXqYaIGmM"))
 	list2016.append(Album("PUP","The Dream is Over","https://coverartarchive.org/release-group/98b0184a-c19c-4a21-917f-b09907eccf85/front.jpg", "https://open.spotify.com/album/7lelUe4aaCQmOMJKsQvirf"))
-	list2016.append(Album("Weaves","Weaves","https://coverartarchive.org/release-group/a39ef3dd-77a6-47c3-ad56-f6bbc998aaf5/front.jpg", "https://open.spotify.com/album/3KyE0xdGrp9Sl9xErn7Zcd"))	
+	list2016.append(Album("Weaves","Weaves","https://coverartarchive.org/release-group/a39ef3dd-77a6-47c3-ad56-f6bbc998aaf5/front.jpg", "https://open.spotify.com/album/3KyE0xdGrp9Sl9xErn7Zcd"))
 	list2016.append(Album("Danny Brown","Atrocity Exhibition","https://coverartarchive.org/release-group/88f4f8e5-ee88-4050-84ad-cf73f7c2b19a/front.jpg", "https://open.spotify.com/album/3e7vtKJ3m1zVh38VGq2g3H"))
 	list2016.append(Album("Nick Cave and the Bad Seeds","Skeleton Tree","https://coverartarchive.org/release-group/49339024-c6b4-4345-b521-6349463513cb/front.jpg", "https://open.spotify.com/album/34xaLN7rDecGEK5UGIVbeJ"))
-	
+
 	runnersUp2016 = list()
 
 	runnersUp2016.append(Album("Holy Esque","At Hope's Ravine","https://coverartarchive.org/release-group/a53ab4fc-1d0d-4092-b4f6-5420de0ba8c5/front.jpg", "https://open.spotify.com/album/3zBzH0JnOdII8wGZU0SjDR"))
@@ -46,7 +104,7 @@ def getAlbumListData():
 	runnersUp2016.append(Album("Oathbreaker","Rheia","https://coverartarchive.org/release-group/081fc686-c66a-4981-827c-c40337834d91/front.png", "https://open.spotify.com/album/2eo8OwibPK06ZoHmIAfClG"))
 	runnersUp2016.append(Album("Odd Nosdam","Sisters","https://coverartarchive.org/release/76056e56-d6a8-4591-912a-69ebe1d91011/12890639066.jpg", "https://open.spotify.com/album/6eI4AV8L9K6bF7099n192W"))
 	runnersUp2016.append(Album("William Tyler","Modern Country","https://coverartarchive.org/release/dc32ae42-0cbb-47f0-80ac-874176f085f8/13670993563.jpg", "https://open.spotify.com/album/0AlKGJjZriUhapXB3hyW6h"))
-	
+
 	spreadsheet2016 = dict()
 	spreadsheet2016["link"] = "https://docs.google.com/spreadsheets/d/1oB34W8PMvObQHQQpNRwneSXreFHbHU0HdLbcbsaW3qw"
 	spreadsheet2016["ratingCount"] = "589"
@@ -314,7 +372,7 @@ def getAlbumListData():
 	list2011.append(Album("Terra Tenebrosa","The Tunnels","http://coverartarchive.org/release-group/d05b7693-e00b-4a66-abad-accad6ea80fe/front.jpg", ""))
 	list2011.append(Album("Trent Reznor & Atticus Ross","The Girl With The Dragon Tattoo","http://coverartarchive.org/release-group/5bae78a4-6a78-42bb-9272-ea1252fec6fd/front.jpg", ""))
 	list2011.append(Album("Battles","Gloss Drop","http://coverartarchive.org/release-group/6016a44b-2b1b-483f-bd3f-e67d2ac534c2/front.jpg", ""))
-	
+
 	runnersUp2011 = list()
 	runnersUp2011.append(Album("Disma","Towards The Megalith","http://coverartarchive.org/release-group/6e2a41a7-0d99-46c0-bab1-2fde73e72d0c/front.jpg", ""))
 	runnersUp2011.append(Album("Diskinesia","Dalla Nascita","https://f1.bcbits.com/img/a2410845608_10.jpg", ""))
@@ -328,7 +386,7 @@ def getAlbumListData():
 	runnersUp2011.append(Album("Solstafir","Svartir Sandarr","http://coverartarchive.org/release-group/3d46b486-44bc-4765-bb0d-40a74e630d32/front.jpg", ""))
 	runnersUp2011.append(Album("Richard Buckner","Our Blood","http://ecx.images-amazon.com/images/I/51lidEERF4L.jpg", ""))
 	runnersUp2011.append(Album("Rome","Die Aesthetik der Herrschaftsfreiheit","http://ecx.images-amazon.com/images/I/41S9qHG86NL._SY300_.jpg", ""))
-	runnersUp2011.append(Album("Russian Circles","Empros","http://coverartarchive.org/release-group/5dc00b2d-4691-4d35-b137-ba646514f096/front.jpg", ""))	
+	runnersUp2011.append(Album("Russian Circles","Empros","http://coverartarchive.org/release-group/5dc00b2d-4691-4d35-b137-ba646514f096/front.jpg", ""))
 	runnersUp2011.append(Album("Thou","The Archer & The Owle","http://coverartarchive.org/release-group/c333dd88-44e7-488c-91a6-e4cca94def10/front.jpg", ""))
 	runnersUp2011.append(Album("Washed Out","Within And Without","http://coverartarchive.org/release-group/df595313-7291-446d-9a8f-0d15068e474a/front.jpg", ""))
 
@@ -346,6 +404,7 @@ def getAlbumListData():
 
 
 	listData = dict()
+	listData["2017"] = albums2017
 	listData["2016"] = albums2016
 	listData["2015"] = albums2015
 	listData["2014"] = albums2014
