@@ -2,12 +2,70 @@ import logging
 
 def getAlbumListData():
 
+	list2018 = list()
+
+	list2018.append(Album("Idles","Joy as an Act of Resistance","https://ia802900.us.archive.org/31/items/mbid-882917bf-09f9-42c2-8c3e-41bb741d126e/mbid-882917bf-09f9-42c2-8c3e-41bb741d126e-21045674015_thumb500.jpg","https://open.spotify.com/album/7BbRSUBwTB37ut0Ht3yAqt?si=gBMI7wTASSSTrPsUf0FNOg"))
+	list2018.append(Album("Daughters","You Won't Get What You Want","https://ia800701.us.archive.org/20/items/mbid-8d3cddb8-3cd5-4e03-8c2d-cfe1aa8447d7/mbid-8d3cddb8-3cd5-4e03-8c2d-cfe1aa8447d7-21381925212_thumb500.jpg","https://open.spotify.com/album/7w7ZTlk8YLc0OxviTp97qA?si=xDfnG9YoSRqntMmlFKDb4g"))
+	list2018.append(Album("Parquet Courts","Wide Awake!","https://ia802801.us.archive.org/9/items/mbid-b429fde4-8676-4af6-9478-0b3bb172ac8a/mbid-b429fde4-8676-4af6-9478-0b3bb172ac8a-19913288269_thumb500.jpg","https://open.spotify.com/album/5uTI2HcpAywDP8Vo1DpJta?si=wEse6IFITsGVwL1INp50yQ"))
+	list2018.append(Album("A.A.L. (Against All Logic)","2012-2017","https://ia802804.us.archive.org/19/items/mbid-395900a3-318d-46d2-8358-947a6f2ea910/mbid-395900a3-318d-46d2-8358-947a6f2ea910-19463819571_thumb500.jpg","https://open.spotify.com/album/1uzfGk9vxMXfaZ2avqwxod?si=ReyQbPRxSXmI531QCKTILw"))
+	list2018.append(Album("Shame","Songs of Praise","https://ia902803.us.archive.org/7/items/mbid-f2b0e0b1-ae55-461d-aa8e-db893f3047f1/mbid-f2b0e0b1-ae55-461d-aa8e-db893f3047f1-20576668677_thumb500.jpg","https://open.spotify.com/album/3A1kutvBmC6czSsSv7aR5E?si=Z1mD27UtSvOSU4_YFEy3Xw"))
+
+	list2018.append(Album("Deafheaven","Ordinary Corrupt Human Love","https://ia802903.us.archive.org/20/items/mbid-d1aa5869-a1f8-4646-afc2-abfe3fdd4368/mbid-d1aa5869-a1f8-4646-afc2-abfe3fdd4368-20532633765_thumb500.jpg","https://open.spotify.com/album/2iA7rzpQsOfAPkfH4Ekp7f?si=QuQgRCsGQLyZPubeORyUhA"))
+	list2018.append(Album("Snail Mail","Lush","https://coverartarchive.org/release/05ea6699-1c57-49b7-a6f7-bb361982f4d7/19420888579_thumb500.jpg","https://open.spotify.com/album/2e48GqjEwCi87gQJanb1bf?si=yNd_Kz9rSQ6Cx8QaAdrgIA"))
+	list2018.append(Album("The Beths","Future Me Hates Me","https://ia802900.us.archive.org/23/items/mbid-018c2a22-52d6-4cda-a489-9b19ead0dd85/mbid-018c2a22-52d6-4cda-a489-9b19ead0dd85-20631718109_thumb500.jpg","https://open.spotify.com/album/4xG41eVnTuDK6uMmcksQ9B?si=e9vF2wtoTsWa1AwDSA9nlg"))
+	list2018.append(Album("Beach House","7","https://ia802804.us.archive.org/28/items/mbid-2ed28366-d982-4671-aec0-632cda8ca9bb/mbid-2ed28366-d982-4671-aec0-632cda8ca9bb-19290765672_thumb500.jpg","https://open.spotify.com/album/4qftBBO7pnYlek3mRENIvM?si=Bwjs00hnRwmmSXoVxgHLNA"))
+	list2018.append(Album("Nils Frahm","All Melody","https://ia800107.us.archive.org/12/items/mbid-7ebabd10-6943-494b-bbb9-8c38d164f342/mbid-7ebabd10-6943-494b-bbb9-8c38d164f342-18822492433_thumb500.jpg","https://open.spotify.com/album/3MH77JVM17CEdDLz374t1e?si=6SX3MIAJQkW8rdzNYaHh6Q"))
+
+	list2018.append(Album("Jon Hopkins","Singularity","https://ia802800.us.archive.org/26/items/mbid-30161b32-5bf3-4ea5-8a13-4dbddfb40699/mbid-30161b32-5bf3-4ea5-8a13-4dbddfb40699-19771732225_thumb500.jpg","https://open.spotify.com/album/1nvzBC1M3dlCMIxfUCBhlO?si=MzjC1r6URY25AjI4hOWYhA"))
+	list2018.append(Album("Earl Sweatshirt","Some Rap Songs","https://ia601503.us.archive.org/8/items/mbid-bb12aa9f-824c-4c3d-8e6c-5cb1f40b3ca3/mbid-bb12aa9f-824c-4c3d-8e6c-5cb1f40b3ca3-21597302452_thumb500.jpg","https://open.spotify.com/album/66at85wgO2pu5CccvqUF6i?si=qOyq22WiRkmcDuRYmmM25g"))	
+	list2018.append(Album("Caroline Rose","Loner","https://ia802806.us.archive.org/6/items/mbid-ed177cdd-f5d5-481f-b0fe-b76d353f4fcb/mbid-ed177cdd-f5d5-481f-b0fe-b76d353f4fcb-19293291137_thumb500.jpg","https://open.spotify.com/album/2ztVsnlMAsHqVe1BjoICnr?si=lFyAc4OwSimADS559eYyaQ"))
+	list2018.append(Album("Flasher","Constant Image","https://ia802804.us.archive.org/25/items/mbid-ad6b9da1-7ae8-4fde-b4f2-5ef912817f68/mbid-ad6b9da1-7ae8-4fde-b4f2-5ef912817f68-19938930527_thumb500.jpg","https://open.spotify.com/album/6fvUDhvz6hDVck9epHLnf6?si=CpkvGoIlSxuraOXMG9qPmw"))
+	list2018.append(Album("Tim Hecker","Konoyo","https://ia802901.us.archive.org/3/items/mbid-359c37a9-bd1e-48db-b892-6f96846403e4/mbid-359c37a9-bd1e-48db-b892-6f96846403e4-21105151709_thumb500.jpg","https://open.spotify.com/album/4TU8d9DGafZZiyN7peC4sl?si=MABbS-UDR_SDCWecG4DsvQ"))
+
+	list2018.append(Album("Holy Fawn","Death Spells","https://ia800700.us.archive.org/10/items/mbid-2fecd74f-e921-4ed1-b5bb-23dccb6e9203/mbid-2fecd74f-e921-4ed1-b5bb-23dccb6e9203-20973015984_thumb500.jpg","https://open.spotify.com/album/7FftBO1RPryPqS91iua3ne?si=JgbnaT_jQfuZ16C8VLYY7w"))
+	list2018.append(Album("Young Fathers","Cocoa Sugar","https://ia902802.us.archive.org/0/items/mbid-11ce37ca-3894-4269-a609-5bb916bfcedf/mbid-11ce37ca-3894-4269-a609-5bb916bfcedf-19763834370_thumb500.jpg","https://open.spotify.com/album/03Dp6OJS4wd7dI1rRszPwj?si=AuAr0U7uTTCYJIOSWqc0UQ"))
+	list2018.append(Album("Let's Eat Grandma","I'm All Ears","https://ia902809.us.archive.org/2/items/mbid-139863bd-b500-4a08-84c5-d05c10e08575/mbid-139863bd-b500-4a08-84c5-d05c10e08575-20311150673_thumb500.jpg","https://open.spotify.com/album/5Bnhkya5cGltQFTrnC0grx?si=CKk8lqiqRnGnrGbIUjU0zQ"))
+	list2018.append(Album("Neko Case","Hell-On","https://ia802803.us.archive.org/17/items/mbid-e7a7a58c-2dbc-485c-9a75-54ba41defda6/mbid-e7a7a58c-2dbc-485c-9a75-54ba41defda6-20060472950_thumb500.jpg","https://open.spotify.com/album/7I141P48NQw206up7jBezG?si=pevqfJSsQpumFpK6VEeoKw"))
+	list2018.append(Album("Iceage","Beyondless","https://ia902808.us.archive.org/1/items/mbid-d1b776d6-d7c7-4505-b6df-0e7bfba0c2db/mbid-d1b776d6-d7c7-4505-b6df-0e7bfba0c2db-20357897053_thumb500.jpg","https://open.spotify.com/album/5H8wFFblf7YvGc7LbBzuR9?si=9S52EbEwQMiPavMQYIk0aQ"))
+
+	list2018.append(Album("Car Seat Headrest","Twin Fantasy","https://ia802804.us.archive.org/10/items/mbid-66d6168d-14f2-48bf-8c5f-a125401ebaa7/mbid-66d6168d-14f2-48bf-8c5f-a125401ebaa7-19013827522_thumb500.jpg","https://open.spotify.com/album/20U1UWeGcGq7JVW0tf8yfH?si=BCk-UUV-R3qVo71wYmWNJA"))
+	list2018.append(Album("Chastity","Death Lust","https://f4.bcbits.com/img/a2897047827_10.jpg","https://open.spotify.com/album/57j0H5oZv58jTE1kR4kjIg?si=LSqRpaTNSzmFL_JGNyWt4g"))
+	list2018.append(Album("Adrianne Lenker","abysskiss","https://f4.bcbits.com/img/a2245808128_10.jpg","https://open.spotify.com/album/5W6TxvIqACEfnxm0VgPhv7?si=R5L8iaXgQhKd5pDe9fpV9A"))	
+	list2018.append(Album("Tropical Fuck Storm","A Laughing Death in Meatspace","https://ia802806.us.archive.org/6/items/mbid-5ad30adb-4ed8-4ead-a404-e780de1cc45d/mbid-5ad30adb-4ed8-4ead-a404-e780de1cc45d-19863197935_thumb500.jpg","https://open.spotify.com/album/1Q351pwqlWprsmF8fIudo6?si=CUQctXbzTmKQuAzRvPxOPg"))
+	list2018.append(Album("Hop Along","Bark Your Head Off, Dog","https://ia800108.us.archive.org/25/items/mbid-e5b2ec24-8d2c-4641-8058-815cb35e67a7/mbid-e5b2ec24-8d2c-4641-8058-815cb35e67a7-18918680426_thumb500.jpg","https://open.spotify.com/album/7taAuoHvZ4LJzEaB0OzuP3?si=eEwiy_XBRp-AOr6u8w1u-g"))
+
+	list2018.append(Album("boygenius","boygenius","https://ia802907.us.archive.org/26/items/mbid-3fa9804c-3721-406c-b176-83f768389c30/mbid-3fa9804c-3721-406c-b176-83f768389c30-21304666857_thumb500.jpg","https://open.spotify.com/album/5BRORKnC2HD5xhgUyR31SH?si=yOx2v8XlTD6LxfsS2YRKWQ"))
+	list2018.append(Album("Mikaela Davis","Delivery","https://ia601508.us.archive.org/14/items/mbid-c356329a-7052-4292-b0a0-66f467ef072c/mbid-c356329a-7052-4292-b0a0-66f467ef072c-21696383895_thumb500.jpg","https://open.spotify.com/album/4FUgK5s0hDVf5yKIOwq7ex?si=3VK5BiLnRW-s26xC3oCpGQ"))
+	list2018.append(Album("Sons of Kemet","Your Queen is a Reptile","https://ia902803.us.archive.org/10/items/mbid-7ac02e18-decf-4003-8b79-c035ae1a8fb8/mbid-7ac02e18-decf-4003-8b79-c035ae1a8fb8-19544207848_thumb500.jpg","https://open.spotify.com/album/4pxnDGBdoGu88h8ZInX5f5?si=WCnsV3NlQgOrEFElEb5Djw"))
+	list2018.append(Album("HOLY","All These Worlds are Yours","https://ia600108.us.archive.org/2/items/mbid-8a7f2759-e1ec-4e23-bf91-42e501065dae/mbid-8a7f2759-e1ec-4e23-bf91-42e501065dae-18971228148_thumb500.jpg","https://open.spotify.com/album/2xD41zvm7Mn7mB64IWtUHs?si=1y6OO7P_Rjmqb3ZNdH4xBA"))
+	list2018.append(Album("Sloucher","Be True","https://f4.bcbits.com/img/a3625052353_10.jpg","https://open.spotify.com/album/0ozxvtCkDsMFNvvSPeZAWm?si=E9S7frHSR_a2pddDqlO-rw"))
+
+	runnersUp2018 = list()
+
+	runnersUp2018.append(Album("Bodega","Endless Scroll","https://f4.bcbits.com/img/a1596674546_10.jpg","https://open.spotify.com/album/2L8xdzyyH71fza7w3OILzl?si=qwV4hbp4TOyxo4NkCA6lXA"))
+	runnersUp2018.append(Album("Jean Grae x Quelle Chris","Everything's Fine","https://ia800107.us.archive.org/33/items/mbid-ea68a4bc-23fa-4098-bdc4-b2f945ae1b61/mbid-ea68a4bc-23fa-4098-bdc4-b2f945ae1b61-18919779443_thumb500.jpg","https://open.spotify.com/album/22oHrB4SLwayyuLE02t5BD?si=kusCSwHpSpKrURNmyNOlww"))
+	runnersUp2018.append(Album("Kathryn Joseph","From When I Wake the Want Is","https://ia601508.us.archive.org/5/items/mbid-f8664fed-1eba-4a2e-ab66-5df4fe45cf39/mbid-f8664fed-1eba-4a2e-ab66-5df4fe45cf39-21798623072_thumb500.jpg","https://open.spotify.com/album/7faUUBGOjjw16j2GGgSsS3?si=-jFNETjKROCyo3q915XP3A"))
+	runnersUp2018.append(Album("Moses Sumney","Black in Deep Red, 2014","https://f4.bcbits.com/img/a1292895729_10.jpg","https://open.spotify.com/album/7q1a6OEw4MtYUIzG5SFOi3?si=zJmHUmX-Q5afH-bfz-X-zw"))
+	runnersUp2018.append(Album("Jeff Tweedy","WARM","https://ia902901.us.archive.org/34/items/mbid-b9fe982a-3ddb-490f-b702-18b26e66b929/mbid-b9fe982a-3ddb-490f-b702-18b26e66b929-21759024089_thumb500.jpg","https://open.spotify.com/album/2XTPulCL6EUx1thyJPnlmj?si=LCEjgRyjRfudlhEfjAfqCw"))
+	
+
+	spreadsheet2018 = dict()
+	spreadsheet2018["link"] = "https://docs.google.com/spreadsheets/d/1TwqYRoASC53dyPAufxxoMBPv4efacT3zJ9aZrQxBV-g/edit#gid=0"
+	spreadsheet2018["ratingCount"] = "536"
+	spreadsheet2018["averageRating"] = "6.36"
+
+	albums2018 = dict()
+	albums2018["list"] = list2018
+	albums2018["runnersUp"] = runnersUp2018
+	albums2018["spreadsheet"] = spreadsheet2018
+
+
 	list2017 = list()
 
 	list2017.append(Album("Big Thief","Capacity","https://coverartarchive.org/release-group/3fd9b616-15ec-4a3d-81df-866bd9942202/front.jpg",""))
 	list2017.append(Album("Protomartyr","Relatives in Descent","https://coverartarchive.org/release/4734f1c1-6529-41ac-9c88-5ff82cb6e13c/18324922657.jpg",""))
 	list2017.append(Album("Idles","Brutalism","https://coverartarchive.org/release/6d4e53b2-82d1-4154-907d-00f243284f2b/16733187540.jpg",""))
-	list2017.append(Album("Gang of Youths","Go Farther in Lightness","https://coverartarchive.org/release/05a13538-a9c8-45cc-87b1-6fe51bce08f7/18444950127.jpg",""))
+	list2017.append(Album("Gang of Youths","Go Farther in Lightness","https://ia800809.us.archive.org/8/items/mbid-05a13538-a9c8-45cc-87b1-6fe51bce08f7/mbid-05a13538-a9c8-45cc-87b1-6fe51bce08f7-20244359129_thumb500.jpg",""))
 	list2017.append(Album("Priests","Nothing Feels Natural","https://coverartarchive.org/release/003c411f-e563-461b-963b-f3ec51498975/15687611371.jpg",""))
 
 	list2017.append(Album("Manchester Orchestra","A Black Mile to the Surface","https://coverartarchive.org/release-group/0e044656-b567-473e-ad96-bec356ce2aba/front.jpg",""))
@@ -73,7 +131,7 @@ def getAlbumListData():
 	list2016.append(Album("A Tribe Called Quest","We Got it from Here... Thank You 4 Your Service","https://coverartarchive.org/release-group/b445860f-edd9-4160-841c-fccf5533ecbd/front.jpg", "https://open.spotify.com/album/3WvQpufOsPzkZvcSuynCf3"))
 	list2016.append(Album("MONEY","Suicide Songs","https://coverartarchive.org/release-group/0c192e53-6b2c-4ece-bea5-624a44f40274/front.jpg", "https://open.spotify.com/album/4Yrey9xf8CYNrKaeSgTGAs"))
 
-	list2016.append(Album("Slow Dakota","The Ascension of Slow Dakota","https://d3rt1990lpmkn.cloudfront.net/640/e6ca10f55e8ab456ac7b12eddd459d79f14c4392", "https://open.spotify.com/album/4h7NRdxlDtkLPlQssE6O10"))
+	list2016.append(Album("Slow Dakota","The Ascension of Slow Dakota","https://f4.bcbits.com/img/a2211100948_10.jpg", "https://open.spotify.com/album/4h7NRdxlDtkLPlQssE6O10"))
 	list2016.append(Album("Explosions in the Sky","The Wilderness","https://coverartarchive.org/release/f8068355-0dce-4845-88ca-1330764db570/13191737587.png", "https://open.spotify.com/album/79X3DX8IqI3jZXQvsrFiDV"))
 	list2016.append(Album("Bon Iver","22, A Million","https://coverartarchive.org/release-group/f0e8f425-a941-48df-b5d7-2ceeaaf77c71/front.jpg", "https://open.spotify.com/album/1PgfRdl3lPyACfUGH4pquG"))
 	list2016.append(Album("Parquet Courts","Human Performance","https://coverartarchive.org/release-group/3353a8a0-a5ab-4970-b34e-090afcc2bba7/front.jpg", "https://open.spotify.com/album/4RNew41ZeRuoRNg3YAhvpe"))
@@ -149,7 +207,7 @@ def getAlbumListData():
 
 	runnersUp2015 = list()
 	runnersUp2015.append(Album("Baroness", "Purple", "https://coverartarchive.org/release-group/df98ad28-b0b2-4aa6-8353-eea4146b93f1/front.jpg", ""))
-	runnersUp2015.append(Album("Have you ever seen the Jane Fonda Aerobic VHS?", "Teenage Sweetheart", "https://scontent-sea1-1.xx.fbcdn.net/hphotos-xtf1/v/t1.0-9/11224327_421491128054598_548165804995464950_n.jpg?oh=0ddb27f43b84cf30110b9e1fc2c3734f&oe=57162AB7", ""))
+	runnersUp2015.append(Album("Have you ever seen the Jane Fonda Aerobic VHS?", "Teenage Sweetheart", "https://f4.bcbits.com/img/a2637841094_10.jpg", ""))
 	runnersUp2015.append(Album("Oneohtrix Point Never", "Garden of Delete", "https://coverartarchive.org/release-group/5acba13f-0e96-4119-856a-6cd561ccd694/front.jpg", ""))
 	runnersUp2015.append(Album("Royal Headache", "High", "https://coverartarchive.org/release-group/378f3df6-f7e5-4fb5-b313-2ca370ea216b/front.jpg", ""))
 	runnersUp2015.append(Album("Sports", "All of Something", "https://coverartarchive.org/release-group/35628285-2da7-4db4-a5e6-5585791d2d61/front.jpg", ""))
@@ -216,7 +274,7 @@ def getAlbumListData():
 	list2013 = list()
 	list2013.append(Album("Jon Hopkins", "Immunity", "http://ia801801.us.archive.org/3/items/mbid-9b93c88b-b939-4206-af30-b3a3e7f1ab8d/mbid-9b93c88b-b939-4206-af30-b3a3e7f1ab8d-4299705401_thumb500.jpg", ""))
 	list2013.append(Album("Kurt Vile", "Wakin on a Pretty Daze", "https://ia801702.us.archive.org/2/items/mbid-b62e3ec7-d6bb-43c6-8eb8-30d958d109d0/mbid-b62e3ec7-d6bb-43c6-8eb8-30d958d109d0-3846880817_thumb500.jpg", ""))
-	list2013.append(Album("Nils Frahm", "Spaces", "http://coverartarchive.org/release/6f9f69af-f0d6-40d8-8f33-de7a3f0ca052/5854196919-500.jpg", ""))
+	list2013.append(Album("Nils Frahm", "Spaces", "https://ia801002.us.archive.org/5/items/mbid-30d9a7e2-e10a-431d-8cc2-6e57a8abfc4b/mbid-30d9a7e2-e10a-431d-8cc2-6e57a8abfc4b-6036413048_thumb500.jpg", ""))
 	list2013.append(Album("Altar Of Plagues", "Teethed Glory And Injury", "http://coverartarchive.org/release-group/6d809bf6-4d98-4509-aa3b-587dcd82d081/front-500.jpg", ""))
 	list2013.append(Album("Darkside", "Psychic", "http://coverartarchive.org/release/873f8153-2758-4f33-8399-5d00e4b9370e/front-500.jpg", ""))
 	list2013.append(Album("Iceage", "You're Nothing", "http://coverartarchive.org/release-group/01357463-b63c-4a6b-ade1-8b5f4eb55b96/front-500.jpg", ""))
@@ -253,7 +311,7 @@ def getAlbumListData():
 	list2013.append(Album("Jenny Hval", "Innocence Is Kinky", "http://coverartarchive.org/release-group/022cf563-579e-4655-91a0-bef34732306b/front-250.jpg", ""))
 	list2013.append(Album("The Knife", "Shaking The Habitual", "http://coverartarchive.org/release-group/06448e12-18d8-4d52-a51f-d4c83d07ec09/front-250.jpg", ""))
 	list2013.append(Album("Sigur Ros", "Kveikur", "http://coverartarchive.org/release-group/9fa7397e-7212-425f-8158-87c3bfb79602/front-250.jpg", ""))
-	list2013.append(Album("Ghostpoet", "Some Say I So I Say Light", "http://coverartarchive.org/release/12513a3d-404a-4db4-93f1-7b73321807dd/4033365986-250.jpg", ""))
+	list2013.append(Album("Ghostpoet", "Some Say I So I Say Light", "https://ia800106.us.archive.org/9/items/mbid-12513a3d-404a-4db4-93f1-7b73321807dd/mbid-12513a3d-404a-4db4-93f1-7b73321807dd-17605309898_thumb500.jpg", ""))
 
 	runnersUp2013 = list()
 
@@ -304,7 +362,7 @@ def getAlbumListData():
 	list2012.append(Album("White Rabbits","Milk Famous","http://ecx.images-amazon.com/images/I/51tdXd%2BUnYL.jpg", ""))
 	list2012.append(Album("Cate Le Bon","CYRK","http://ecx.images-amazon.com/images/I/61XRvSU9fzL.jpg", ""))
 	list2012.append(Album("Kowloon Walled City","Container Ships","http://coverartarchive.org/release-group/f8ea1b69-0dbf-44cc-895e-1db5d717f115/front.jpg", ""))
-	list2012.append(Album("Wizard Rifle","Speak Loud Say Nothing","http://www.invisibleoranges.com/wp-content/uploads/2012/03/wizardrifle_album.jpeg", ""))
+	list2012.append(Album("Wizard Rifle","Speak Loud Say Nothing","https://f4.bcbits.com/img/a1266608581_10.jpg", ""))
 	list2012.append(Album("Bats","The Sleep Of Reason","http://coverartarchive.org/release-group/2a4a8fda-e47f-4c95-994f-7bf8ae500f3d/front.jpg", ""))
 	list2012.append(Album("Andrew Bird","Break It Yourself","http://coverartarchive.org/release-group/97fe2ba8-1c28-45ec-a8ba-38b7e4893e3d/front.jpg", ""))
 	list2012.append(Album("Alexandre Desplat","Moonrise Kingdom","http://ia601606.us.archive.org/35/items/mbid-349000da-5b41-4fd3-8cc2-21082ec74eee/mbid-349000da-5b41-4fd3-8cc2-21082ec74eee-3435627137_thumb500.jpg", ""))
@@ -404,6 +462,7 @@ def getAlbumListData():
 
 
 	listData = dict()
+	listData["2018"] = albums2018
 	listData["2017"] = albums2017
 	listData["2016"] = albums2016
 	listData["2015"] = albums2015
